@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatable" content="ie=edge">
+	<title>춘천시 평생학습관</title>
+	<link rel="stylesheet" href="css/regist.css">
+	<script src="script/jquery-3.6.0.min.js"></script>
+	<script src="script/gnb.js"></script>
+	<script src="script/regist.js"></script>
+</head>
+<body>
+ <div id="skipNav">
+	<a href="#registWrap">본문 바로가기</a>
+ </div>
+ <div id="header">
+ 	<div class="inner">
+		<div class="header_top">
+			<ul>
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="regist.html">회원가입</a></li>
+				<li><a href="http://www.chuncheon.go.kr/">춘천시청</a></li>
+			</ul>
+		</div>
+		<div class="menuArea">
+			<h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
+			<div id="headerBox">
+				<div id="gheader">
+					<ul id="gnb">
+						<li><a href="sub1.html">평생학습도시춘천</a>
+							<ul class="sub">
+								<li><a href="#">인사말</a></li>
+								<li><a href="#">비전 및 목표</a></li>
+								<li><a href="#">주요연혁</a></li>
+								<li><a href="#">조직 및 업무</a></li>
+								<li><a href="#">시설현황</a></li>
+								<li><a href="#">찾아오시는 길</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">주요사업</a>
+							<ul class="sub">
+								<li><a href="#">시민학습 공동체 조성</a></li>
+								<li><a href="#">평생학습 네트워크 구축</a></li>
+								<li><a href="#">평생교육 대학협력 사업</a></li>
+								<li><a href="#">평생교육 특성화사업 지원</a></li>
+							</ul>
+						</li>
+						<li><a href="#">교육신청</a>
+							<ul class="sub">
+								<li><a href="#">정기교육</a></li>
+								<li><a href="#">단기교육</a></li>
+								<li><a href="#">특화교육</a></li>
+							</ul>
+						</li>
+						<li><a href="#">강사은행</a>
+							<ul class="sub">
+								<li><a href="#">강사은행이란</a></li>
+								<li><a href="#">강사현황</a></li>
+								<li><a href="#">강사은행 등록신청</a></li>
+								<li><a href="#">수요연계요청</a></li>
+							</ul>
+						</li>
+						<li><a href="#">평생학습네트워크</a>
+							<ul class="sub">
+								<li><a href="#">평생학습동아리</a></li>
+								<li><a href="#">자원봉사단</a></li>
+								<li><a href="#">평생교육기관 안내</a></li>
+								<li><a href="#">e-두루보고</a></li>
+							</ul>
+						</li>
+						<li><a href="#">열린마당</a>
+							<ul class="sub">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+					</ul><!-- gnb -->
+					<div class="sub_visual">
+						<img src="images/subimg.jpg" alt="images">
+					</div>
+				</div><!-- gheader -->
+			</div><!-- headerBox -->
+		</div><!-- menuArea -->
+	</div><!-- inner -->
+ </div><!-- header end -->
+ 
+ <div id="sub_visual">
+ 	<img src="images/login_visual.jpg" alt="login_visual">
+ 	<div class="sub_inner">
+		<ul>
+			<li><a href="index.html">홈</a><span>></span></li>
+			<li><a href="regist.html">회원가입</a></li>
+		</ul>
+	</div>
+ </div><!-- sub_visual -->
+ 
+ <div id="registWrap">
+	<div class="inner">
+		<div class="cont5">
+			<div id="regForm">
+				<h2>회원가입</h2>
+				<form action="login.php" name="rfm" method="post" id="rfm">
+					<fieldset>
+						<legend class="hide">회원가입</legend>
+						<textarea>
+* 수집하는 개인정보 항목
+아래와 같은 개인정보를 수집하고 있습니다.
+														 
+▶ 이름 , 이메일 , 연락처 
+
+* 개인정보의 수집 및 이용목적
+
+수집한 개인정보를 다음의 목적을 위해 활용합니다.
+▶ 원활한 고객상담을 제공하기 위함
+
+* 개인정보의 보유 및 이용기간
+
+원칙적으로 개인정보의 수집목적 또는 제공받은 목정이 달성되면 지체 없이 파기합니다.
+다만, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계 법률에 의해 보존할 필요가
+있는 경우에는 일정기간 보존합니다.
+						</textarea>
+						<div id="agr">
+							<label for="agree">
+								<input type="checkbox" name="agree" id="agree"/>
+								위의 개인정보 취급방침에 동의합니다.
+							</label>
+						</div>
+						<table>
+							<colgroup>
+								<col width="30%">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th><label for="id">*아이디</label></th>
+									<td><input type="text" name="id" id="id"/></td>
+								</tr>
+								<tr>
+									<th><label for="pw">*비밀번호</label></th>
+									<td><input type="password" name="pw" id="pw"/></td>
+								</tr>
+								<tr>
+									<th><label for="rpw">*비밀번호 확인</label></th>
+									<td><input type="password" name="rpw" id="rpw"/></td>
+								</tr>
+								<tr>
+									<th><label for="userName">*이 름</label></th>
+									<td><input type="text" name="userName" id="userName"/></td>
+								</tr>
+								<tr>
+									<th><label for="birth">*생년월일</label></th>
+									<td>
+										<input type="number" name="birth" id="birth" placeholder="생년월일(6자)" maxlength="6"/>
+									</td>
+								</tr>
+								<tr>
+									<th><label for="email">*이메일</label></th>
+									<td>
+										<input type="text" name="email" id="email"/>
+									</td>
+									<tr>
+										<th><label for="hp">*연락처</label></th>
+										<td>
+											<input type="text" name="hp" id="hp" placeholder="하이픈제외입력" maxlength="11"/>
+										</td>
+									</tr>
+								</tr>
+							</tbody>
+						</table>						
+						<input type="submit" id="submit" value="회원가입"/>
+						<input type="reset" id="reset" value="취소"/>
+					</fieldset>
+				</form>
+			</div><!-- regForm -->
+		</div><!-- cont5 -->
+	</div><!-- inner -->
+ </div><!-- registWrap -->
+ 
+ <div id="footer">
+ 	<div class="footer_menu">
+		<div class="inner">
+			<ul>
+				<li><a href="#">저작권/접근성보호정책</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">영상정보처리기기 운영방침</a></li>
+			</ul>
+			<div class="family_site">
+				<select id="family" onchange="if(this.value) window.open(this.value);">
+					<option>관련사이트</option>
+					<option value="https://www.ccwomen.or.kr">춘천여성인력개발센터</option>
+					<option value="https://library.chuncheon.go.kr">춘천시립공공도서관</option>
+					<option value="http://www.chuncheon.go.kr">춘천시청</option>
+					<option value="http://www.mogef.go.kr">여성가족부</option>
+				</select>	
+			</div>		
+		</div>
+	</div>
+ 	<div class="inner">
+		<address class="address">
+			(24420) 강원도 춘천시 퇴계농공로 40(퇴계동) 교육문의 T.033)245-5191 / 일반문의 T.033)250-3539 / F.033)250-4314
+		</address>
+		<p class="copyright">COPYRIGHT 2021 ⓒ CHUNCHEONCITY ALL RIGHTS RESERVED</p>
+	</div><!-- inner -->
+ </div><!-- footer end -->
+</body>
+</html>

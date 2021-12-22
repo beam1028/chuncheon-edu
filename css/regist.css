@@ -1,0 +1,61 @@
+@import url(common.css);
+
+/*sub_visual*/
+#sub_visual{background:#fff;}
+#sub_visual img {display: block; margin: 0px auto;}
+#sub_visual .sub_inner{
+	width: 1200px;
+	height: 60px;
+	border-bottom:1px solid #ddd;
+	margin:0 auto;
+}
+#sub_visual .sub_inner ul {height: 250px;margin-left:30px}
+#sub_visual .sub_inner ul li {line-height:55px;float:left}
+#sub_visual .sub_inner ul li a {font-weight:bold}
+#sub_visual .sub_inner ul li a:hover {color:#2c9ac3}
+
+/*registWrap*/
+#registWrap {height:950px;background:#fff;}
+#registWrap .inner .cont5{
+	width: 900px;
+	height: 570px;
+	margin:0 auto;
+}
+
+/*regForm*/
+#regForm {
+	width: 700px;
+	position:relative;
+	padding-top:20px;
+	margin:0 auto;
+}
+#regForm h2,th{color:#464646}
+#regForm textarea {
+	width: 700px;
+	height: 300px;
+	font-size:1.2em;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+#rfm .on {color:#f00;padding-top:10px}
+
+/*table*/
+#regForm table {width: 700px;margin:20px auto;}
+#regForm table tr {text-align:left;}
+#regForm table tr th,td {padding:10px;}
+#regForm table input {width:100%;height: 30px;padding-left:0.5em;}
+#regForm table select {height: 34px;}
+
+/*submit,reset*/
+#submit,#reset{
+	width: 49%;
+	height: 50px;
+	border:0;
+	font-size:1.1em;
+	font-weight:bold;
+	color:white;
+	cursor:pointer;
+}
+#submit {background:#2c9ac3;}
+#reset {background:#464646;}

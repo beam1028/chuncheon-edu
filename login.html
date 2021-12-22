@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatable" content="ie=edge">
+	<title>춘천시 평생학습관</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="script/jquery-3.6.0.min.js"></script>
+	<script src="script/gnb.js"></script>
+	<script src="script/login.js"></script>
+</head>
+<body>
+ <div id="skipNav">
+	<a href="#loginWrap">본문 바로가기</a>
+ </div>
+ <div id="header">
+ 	<div class="inner">
+		<div class="header_top">
+			<ul>
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="regist.html">회원가입</a></li>
+				<li><a href="http://www.chuncheon.go.kr/">춘천시청</a></li>
+			</ul>
+		</div>
+		<div class="menuArea">
+			<h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
+			<div id="headerBox">
+				<div id="gheader">
+					<ul id="gnb">
+						<li><a href="sub1.html">평생학습도시춘천</a>
+							<ul class="sub">
+								<li><a href="#">인사말</a></li>
+								<li><a href="#">비전 및 목표</a></li>
+								<li><a href="#">주요연혁</a></li>
+								<li><a href="#">조직 및 업무</a></li>
+								<li><a href="#">시설현황</a></li>
+								<li><a href="#">찾아오시는 길</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">주요사업</a>
+							<ul class="sub">
+								<li><a href="#">시민학습 공동체 조성</a></li>
+								<li><a href="#">평생학습 네트워크 구축</a></li>
+								<li><a href="#">평생교육 대학협력 사업</a></li>
+								<li><a href="#">평생교육 특성화사업 지원</a></li>
+							</ul>
+						</li>
+						<li><a href="#">교육신청</a>
+							<ul class="sub">
+								<li><a href="#">정기교육</a></li>
+								<li><a href="#">단기교육</a></li>
+								<li><a href="#">특화교육</a></li>
+							</ul>
+						</li>
+						<li><a href="#">강사은행</a>
+							<ul class="sub">
+								<li><a href="#">강사은행이란</a></li>
+								<li><a href="#">강사현황</a></li>
+								<li><a href="#">강사은행 등록신청</a></li>
+								<li><a href="#">수요연계요청</a></li>
+							</ul>
+						</li>
+						<li><a href="#">평생학습네트워크</a>
+							<ul class="sub">
+								<li><a href="#">평생학습동아리</a></li>
+								<li><a href="#">자원봉사단</a></li>
+								<li><a href="#">평생교육기관 안내</a></li>
+								<li><a href="#">e-두루보고</a></li>
+							</ul>
+						</li>
+						<li><a href="#">열린마당</a>
+							<ul class="sub">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+					</ul><!-- gnb -->
+					<div class="sub_visual">
+						<img src="images/subimg.jpg" alt="images">
+					</div>
+				</div><!-- gheader -->
+			</div><!-- headerBox -->
+		</div><!-- menuArea -->
+	</div><!-- inner -->
+ </div><!-- header end -->
+ 
+ <div id="sub_visual">
+ 	<img src="images/login_visual.jpg" alt="login_visual">
+ 	<div class="sub_inner">
+		<ul>
+			<li><a href="index.html">홈</a><span>></span></li>
+			<li><a href="regist.html">회원가입</a><span>></span></li>
+			<li><a href="login.html">로그인</a></li>
+		</ul>
+	</div>
+ </div><!-- sub_visual -->
+ 
+ <div id="loginWrap">
+	<div class="inner">
+		<div class="cont4">
+			<div class="loghead">
+				<strong>로그인 후 평생학습관의 다양한 서비스를 이용하세요.</strong>
+			</div>
+			<div class="loginForm">
+				<h2>로그인</h2>	
+				<form action="login.php" name="fm">
+					<fieldset>
+						<legend class="hide">로그인</legend>
+						<input type="text" id="id" name="id" placeholder="아이디 입력"/>
+						<input type="password" id="pw" name="pw" placeholder="비밀번호 입력"/>
+						<input type="checkbox" id="savecheck" name="savecheck">
+						<label for="savecheck">아이디 저장</label>
+						<input type="checkbox" id="protect" name="protect">
+						<label for="protect">키보드보안 적용</label>
+						<input class="login_btn" type="button" value="로그인" onclick="form_login()"/>
+					</fieldset>
+				</form>
+			</div>
+			<div class="join_btn">
+				<ul>
+					<li><a href="regist.html">회원가입</a></li>
+					<li><a href="#">아이디/비밀번호 찾기</a></li>
+				</ul>
+			</div>
+		</div><!-- cont4 -->
+	</div><!-- inner -->
+ </div><!-- loginWrap -->
+ 
+ <div id="footer">
+ 	<div class="footer_menu">
+		<div class="inner">
+			<ul>
+				<li><a href="#">저작권/접근성보호정책</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">영상정보처리기기 운영방침</a></li>
+			</ul>
+			<div class="family_site">
+				<select id="family" onchange="if(this.value) window.open(this.value);">
+					<option>관련사이트</option>
+					<option value="https://www.ccwomen.or.kr">춘천여성인력개발센터</option>
+					<option value="https://library.chuncheon.go.kr">춘천시립공공도서관</option>
+					<option value="http://www.chuncheon.go.kr">춘천시청</option>
+					<option value="http://www.mogef.go.kr">여성가족부</option>
+				</select>	
+			</div>		
+		</div>
+	</div>
+ 	<div class="inner">
+		<address class="address">
+			(24420) 강원도 춘천시 퇴계농공로 40(퇴계동) 교육문의 T.033)245-5191 / 일반문의 T.033)250-3539 / F.033)250-4314
+		</address>
+		<p class="copyright">COPYRIGHT 2021 ⓒ CHUNCHEONCITY ALL RIGHTS RESERVED</p>
+	</div><!-- inner -->
+ </div><!-- footer end -->
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url(common.css);
+
+/*login_visual*/
+#sub_visual{background:#fff;}
+#sub_visual img {display: block; margin: 0px auto;}
+#sub_visual .sub_inner{
+	width: 1200px;
+	height: 60px;
+	border-bottom:1px solid #ddd;
+	margin:0 auto;
+}
+#sub_visual .sub_inner ul {height: 250px;margin-left:30px}
+#sub_visual .sub_inner ul li {line-height:55px;float:left}
+#sub_visual .sub_inner ul li a {font-weight:bold}
+#sub_visual .sub_inner ul li a:hover {color:#2c9ac3}
+
+/* loginWrap */
+#loginWrap {padding:100px;background:#fff;}
+#loginWrap .inner .cont4 {
+	width: 900px;
+	height: 570px;
+	margin:0 auto;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	background-color: #fff;
+}
+#loginWrap .inner .loghead {
+	height: 130px;
+	line-height:130px;
+	margin:0 auto;
+	font-size:1.2em;
+	color:white;
+	text-align:center;
+	background-image:url("../images/loghead.jpg");
+}
+#loginWrap .inner .loginForm {
+	position:relative;
+	width: 500px;
+	margin:0 auto
+}
+#loginWrap .inner .loginForm h2 {
+	text-align:center;
+	margin:40px 0 10px 0;
+	color:#484848;
+}
+#loginWrap .inner .loginForm input[type="text"], input[type="password"]{
+	width: 320px;
+	height:40px;
+	display:block;
+	margin-bottom:20px;
+	padding-left:1em;
+	border:1px solid #767676;
+}
+#loginWrap .inner .loginForm input[type="button"]{
+	width: 150px;
+	height: 105px;
+	position:absolute;
+	right:0;
+	top:62px;
+	cursor:pointer;
+	background:#2c9ac3;
+	border:0;
+	color:white;
+	font-size:1.1em;
+	font-weight:bold;
+}
+#loginWrap .inner .loginForm label {
+	color:#767676;
+	cursor:pointer;
+}
+#loginWrap .inner .loginForm label:hover {color:#000}
+#loginWrap .inner .loginForm input[type="checkbox"]{
+	margin-bottom:40px;
+	cursor:pointer;
+}
+#loginWrap .inner .loginForm input:nth-child(6){margin-left:10px}
+#loginWrap .inner .join_btn {
+	width: 500px;
+	margin:0 auto;
+	border-top:1px solid #ddd;
+}
+#loginWrap .inner .join_btn ul {margin-top:20px}
+#loginWrap .inner .join_btn ul li {
+	width: 245px;
+	height: 45px;
+	line-height:45px;
+	text-align:center;
+	float:left;
+	border:1px solid #767676;
+	box-sizing:border-box;
+	margin-top:20px;
+}
+#loginWrap .inner .join_btn ul li:nth-child(2){margin-left:10px}
+#loginWrap .inner .join_btn ul li a{display:block;color:#767676}
+#loginWrap .inner .join_btn ul li a:hover {color:#000}

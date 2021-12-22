@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>춘천시 평생학습관</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css?ver=1">
+	<script src="script/jquery-3.6.0.min.js"></script>
+	<script src="script/gnb.js"></script>
+	<script src="script/normalTab.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=ko"></script>
+	<script src="script/map.js"></script>	
+</head>
+<body onload="initialize()">
+ <div id="skipNav">
+	<a href="#container">본문 바로가기</a>
+ </div>
+ <div id="header">
+ 	<div class="inner">
+		<div class="header_top">
+			<ul>
+				<li><a href="login.html">로그인</a></li>
+				<li><a href="regist.html">회원가입</a></li>
+				<li><a href="http://www.chuncheon.go.kr/">춘천시청</a></li>
+			</ul>
+		</div>
+		<div class="menuArea">
+			<h1><a href="index.html"><img src="images/logo.png" alt="Logo"></a></h1>
+			<div id="headerBox">
+				<div id="gheader">
+					<ul id="gnb">
+						<li><a href="sub1.html">평생학습도시춘천</a>
+							<ul class="sub">
+								<li><a href="sub1.html">인사말</a></li>
+								<li><a href="#">비전 및 목표</a></li>
+								<li><a href="#">주요연혁</a></li>
+								<li><a href="#">조직 및 업무</a></li>
+								<li><a href="#">시설현황</a></li>
+								<li><a href="#">찾아오시는 길</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">주요사업</a>
+							<ul class="sub">
+								<li><a href="sub2.html">시민학습 공동체 조성</a></li>
+								<li><a href="#">평생학습 네트워크 구축</a></li>
+								<li><a href="#">평생교육 대학협력 사업</a></li>
+								<li><a href="#">평생교육 특성화사업 지원</a></li>
+							</ul>
+						</li>
+						<li><a href="#">교육신청</a>
+							<ul class="sub">
+								<li><a href="#">정기교육</a></li>
+								<li><a href="#">단기교육</a></li>
+								<li><a href="#">특화교육</a></li>
+							</ul>
+						</li>
+						<li><a href="#">강사은행</a>
+							<ul class="sub">
+								<li><a href="#">강사은행이란</a></li>
+								<li><a href="#">강사현황</a></li>
+								<li><a href="#">강사은행 등록신청</a></li>
+								<li><a href="#">수요연계요청</a></li>
+							</ul>
+						</li>
+						<li><a href="#">평생학습네트워크</a>
+							<ul class="sub">
+								<li><a href="#">평생학습동아리</a></li>
+								<li><a href="#">자원봉사단</a></li>
+								<li><a href="#">평생교육기관 안내</a></li>
+								<li><a href="#">e-두루보고</a></li>
+							</ul>
+						</li>
+						<li><a href="#">열린마당</a>
+							<ul class="sub">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">갤러리</a></li>
+								<li><a href="#">자주묻는질문</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+					</ul><!-- gnb -->
+					<div class="sub_visual">
+						<img src="images/subimg.jpg" alt="images">
+					</div>
+				</div><!-- gheader -->
+			</div><!-- headerBox -->
+		</div><!-- menuArea -->
+	</div><!-- inner -->
+ </div><!-- header end -->
+ <div id="visual">
+ 	<div class="visual_bc">
+		<div class="slider">
+			<img class="photo" src="images/pc_visual_1.jpg" alt="pc_visual_1"></li>
+			<img class="photo" src="images/pc_visual_2.jpg" alt="pc_visual_2"></li>
+			<img class="photo" src="images/pc_visual_3.jpg" alt="pc_visual_3"></li>
+		</div>
+		<ul class="visualArea_menu">
+			<li>
+				<a href="#">
+					<div class="imgArea">
+						<img src="images/main_suv_1.png" alt="오프라인 정기교육">
+					</div>
+					<div class="textArea">
+						<span>오프라인 정기교육</span><br>
+						<em class="small_font">수강신청</em>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="imgArea">
+						<img src="images/main_suv_2.png" alt="특화교육 수강신청">
+					</div>
+					<div class="textArea">
+						<span>특화교육 수강신청</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="imgArea">
+						<img src="images/main_suv_3.png" alt="강사은행">
+					</div>
+					<div class="textArea">
+						<span>강사은행</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="imgArea">
+						<img src="images/main_suv_4.png" alt="학습동아리">
+					</div>
+					<div class="textArea">
+						<span>학습동아리</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="imgArea">
+						<img src="images/main_suv_5.png" alt="평생교육 기관안내">
+					</div>
+					<div class="textArea">
+						<span>평생교육 기관안내</span>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<div class="imgArea">
+						<img src="images/main_suv_6.png" alt="무료온라인강좌">
+					</div>
+					<div class="textArea">
+						<span>무료온라인강좌</span><br>
+						<em class="small_font">(e-두루보고)</em>
+					</div>
+				</a>
+			</li>
+		</ul><!-- visualArea_menu -->
+	</div><!-- visual_bc -->
+ </div><!-- visual end -->
+ <div id="container">
+ 	<div class="inner">
+		<div class="cont1">
+			<div id="cont_slider">
+				<ul>
+					<li><img src="images/contsilde1.jpg" alt="1"></li>
+					<li><img src="images/contsilde2.jpg" alt="2"></li>
+					<li><img src="images/contsilde3.jpg" alt="3"></li>
+					<li><img src="images/contsilde4.jpg" alt="4"></li>
+				</ul>
+				<a class="control_next">></a>
+				<a class="control_prev"><</a>
+			</div>
+			<div class="csnum">
+				<ul>
+					<li>
+						<p>교육문의</p>
+						<span>T.033)245-5191</span>
+					</li>
+					<li>
+						<p>일반문의</p>
+						<span>T.033)250-4314</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cont2">
+			<div class="box1">
+				<section class="tabArea"> 
+					<ul class="tab"> 
+						<li class="on">
+							<a href="#!">
+								<span>공지사항</span>
+							</a>
+						</li> 
+						<li> 
+							<a href="#!">
+								<span>타기관 소식</span>
+							</a> 
+						</li> 
+					</ul> 
+					<div class="tabBox on">
+						<div class="notice">
+							<ul class="list">
+								<li><a href="#">2021년 장애인 평생학습&시민 생활건강 평생학습...<span>21.09.05</span></a></li>
+								<li><a href="#">2021년 하반기 정기교육[온라인교육] 수강생 추가모집 안내<span>21.08.23</span></a></li>
+								<li><a href="#">2021년 (배워)봄, (나눠)봄 평생학습 특화교육 수강생 모집<span>21.08.03</span></a></li>
+								<li><a href="#">『2021년 하반기 춘천시민 약초학교』 수강생 모집<span>21.07.28</span></a></li>
+								<li><a href="#">한국방송통신대 강원지원대학 "봄내아카데미" 수강생모집...<span>21.07.28</span></a></li>
+							</ul>
+							<p class="more"><a href="#">more +</a></p>
+						</div>
+					</div>
+					<div class="tabBox">
+						<div class="fnotice">
+							<ul class="list">
+								<li><a href="#">[시립도서관] 8월 문화행사 안내 <span>21.08.02</span></a></li>
+								<li><a href="#">[시립도서관] 8월 인문학 강좌 - 위대한 역사가, 역사서와의...<span>21.08.02</span></a></li>
+								<li><a href="#">(재단법인 춘천지혜의 숲) 중장년 기술창업센터 입주기업...<span>21.08.02</span></a></li>
+								<li><a href="#"><강원도장애인복지관> 2021년 『더(THE)울림빅밴드』... <span>21.08.02</span></a></li>
+								<li><a href="#"><한림대학교 평생교육원> 봄내아카데미 수강생 모집...<span>21.08.02</span></a></li>
+							</ul>
+							<p class="more"><a href="#">more +</a></p>
+						</div> 
+					</div> 
+				</section><!-- tabArea -->
+			</div><!-- box1 -->
+			<div class="box2">
+				<ul class="family">
+					<li>
+						<a href="https://www.ccwomen.or.kr">
+							<img src="images/family1.jpg" alt="춘천여성인력개발센터">
+							<span>바로가기 ></span>
+						</a>						
+					</li>
+					<li>
+						<a href="https://library.chuncheon.go.kr">
+							<img src="images/family2.png" alt="춘천시립공공도서관">
+							<span>바로가기 ></span>
+						</a>						
+					</li>
+					<li>
+						<a href="http://www.chuncheon.go.kr">
+							<img src="images/family3.jpg" alt="춘천시청">
+							<span>바로가기 ></span>
+						</a>						
+					</li>
+					<li>
+						<a href="http://www.mogef.go.kr">
+							<img src="images/family4.png" alt="여성가족부">
+							<span>바로가기 ></span>
+						</a>					
+					</li>
+				</ul>	
+			</div><!-- box2 -->
+			<div class="box3">
+				<div class="gtab">
+					<ul>
+						<li class="active"><a href="#"><span>행사사진</span></a>
+							<ul style="display: block;">
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery1-1.jpg" alt="1">
+										</div>
+										<div class="gallery_text">
+											<span>2021년 강사 온택트 위촉식...</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery1-2.jpg" alt="2">
+										</div>
+										<div class="gallery_text">
+											<span>사랑의 면 마스크 만들기...</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery1-3.jpg" alt="3">
+										</div>
+										<div class="gallery_text">
+											<span>사랑의 면 마스크 만들기...</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery1-4.jpg" alt="4">
+										</div>
+										<div class="gallery_text">
+											<span>2020년 평생교육 강사 위촉식...</span>
+										</div>
+									</a>
+								</li>
+								<li class="gmore"><a href="#">more +</a></li>
+							</ul>
+						</li>
+						<li class=""><a href="#"><span>충전업토크콘서트</span></a>
+							<ul style="display: none;">
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery2-1.jpg" alt="1">
+										</div>
+										<div class="gallery_text">
+											<span>2021. 4월(김창옥 대표)</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery2-2.jpg" alt="2">
+										</div>
+										<div class="gallery_text">
+											<span>2021. 3월(조승연 작가)</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery2-3.jpg" alt="3">
+										</div>
+										<div class="gallery_text">
+											<span>2020. 11월(이병훈 소장)</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery2-4.jpg" alt="4">
+										</div>
+										<div class="gallery_text">
+											<span>2020. 11월(채사장 작가)</span>
+										</div>
+									</a>
+								</li>
+								<li class="gmore"><a href="#">more +</a></li>
+							</ul>
+						</li>
+						<li class=""><a href="#"><span>작품사진</span></a>
+							<ul style="display: none;">
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery3-1.jpg" alt="1">
+										</div>
+										<div class="gallery_text">
+											<span>제1회 춘천시 평생학습축제 전시마당</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery3-2.jpg" alt="2">
+										</div>
+										<div class="gallery_text">
+											<span>제1회 춘천시 평생학습축제 전시마당</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery3-3.jpg" alt="3">
+										</div>
+										<div class="gallery_text">
+											<span>제1회 춘천시 평생학습축제 전시마당</span>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<div class="gallery_img">
+											<img src="images/gallery3-4.jpg" alt="4">
+										</div>
+										<div class="gallery_text">
+											<span>제1회 춘천시 평생학습축제 전시마당</span>
+										</div>
+									</a>
+								</li>
+								<li class="gmore"><a href="#">more +</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>	
+			</div><!-- box3 -->
+		</div><!-- cont1 -->
+		<div class="cont3">
+			<div class="map_address">
+				<ul>
+					<li>
+						<p>(24420)<br>강원도 춘천시<br>퇴계농공로 40<br>(퇴계동)</p>
+					</li>
+				</ul>
+			</div>
+			<div id="map_canvas"></div>
+		</div><!-- cont3 -->
+	</div><!-- inner -->
+ </div><!-- container -->
+ <div id="footer">
+ 	<div class="footer_menu">
+		<div class="inner">
+			<ul>
+				<li><a href="#">저작권/접근성보호정책</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">영상정보처리기기 운영방침</a></li>
+			</ul>
+			<div class="family_site">
+				<select id="family" onchange="if(this.value) window.open(this.value);">
+					<option>관련사이트</option>
+					<option value="https://www.ccwomen.or.kr">춘천여성인력개발센터</option>
+					<option value="https://library.chuncheon.go.kr">춘천시립공공도서관</option>
+					<option value="http://www.chuncheon.go.kr">춘천시청</option>
+					<option value="http://www.mogef.go.kr">여성가족부</option>
+				</select>	
+			</div>		
+		</div>
+	</div>
+ 	<div class="inner">
+		<address class="address">
+			(24420) 강원도 춘천시 퇴계농공로 40(퇴계동) 교육문의 T.033)245-5191 / 일반문의 T.033)250-3539 / F.033)250-4314
+		</address>
+		<p class="copyright">COPYRIGHT 2021 ⓒ CHUNCHEONCITY ALL RIGHTS RESERVED</p>
+	</div><!-- inner -->
+ </div><!-- footer end -->
+ <div class="popup">
+	<img src="images/popimg.jpg" alt="" />
+	<input type="checkbox" id="chk" class="chk" /><label for="chk">오늘 하루동안 이 창을 열지 않음.</label>
+	<button class="close">닫기</button>
+ </div>
+ <script src="script/script1.js"></script>
+</body>
+</html>

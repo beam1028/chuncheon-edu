@@ -1,0 +1,106 @@
+@import url(common.css);
+
+/*sub_visual*/
+#sub_visual{background:#fff;}
+#sub_visual img {display: block; margin: 0px auto;}
+#sub_visual .sub_inner{
+	width: 1200px;
+	height: 60px;
+	border-bottom:1px solid #ddd;
+	margin:0 auto;
+}
+#sub_visual .sub_inner ul {
+	width: 1200px;
+	margin:0 auto;
+}
+#sub_visual .sub_inner ul li {
+	width: 200px;
+	text-align:center;
+	line-height:55px;
+	float:left;
+}
+#sub_visual .sub_inner ul li a {display:block;font-weight:bold}
+#sub_visual .sub_inner ul li a:hover {background-color:#2c9ac3;color:#fff}
+.sub_on a{background-color:#2c9ac3;color:#fff}
+
+
+/* subWrap */
+#subWrap {background-color: #fff;}
+#subWrap .inner .tabArea {width: 1200px;padding-top:50px}
+#subWrap .inner .tabArea .tab {width: 400px;height: 50px;margin:0 auto;}
+#subWrap .inner .tabArea .tab li {
+	width: 200px;
+	height: 50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+}
+#subWrap .inner .tabArea .tab li a {
+	display:block;
+	color:#000;
+	font-weight:bold;
+	background-color: #ddd;
+}
+#subWrap .inner .tabArea .tab li.on a {
+	color:#fff;
+	font-weight:bold;
+	background-color: #3854a6;
+}
+
+/*tabBox*/
+.tabArea .tabBox {width: 1200px; display: none; } 
+.tabArea .tabBox.on { display: block;}
+
+/* intro */
+#subWrap .tabBox .introWrap {text-align:center}
+#subWrap .tabBox .sloganImg {margin:50px 0 50px 0}
+#subWrap .tabBox .introWrap .slogan {
+	width: 600px;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	padding:50px 0 50px 0;
+	margin:50px auto;
+}
+/* slogan */
+#subWrap .tabBox .introWrap .slogan p {
+	color:#484848;
+	font-size:2em;
+	font-weight:bold;
+	padding:10px 0 10px 0;
+}
+#subWrap .tabBox .introWrap .slogan p .slo_1 {color:#cc66ff}
+#subWrap .tabBox .introWrap .slogan p .slo_1 em {color:#ff3399;font-style:normal}
+#subWrap .tabBox .introWrap .slogan p .slo_2 {color:#00cc99}
+#subWrap .tabBox .introWrap .slogan p .slo_2 em {color:#ff9933;font-style:normal}
+#subWrap .tabBox .introWrap .slogan p .slo_3 {color:#ff6666}
+#subWrap .tabBox .introWrap .slogan p .slo_3 em {color:#cc9999;font-style:normal}
+
+#subWrap .tabBox .introWrap .slogan_txt {
+	font-size:1.2em;
+	color:#484848;
+	padding:50px 0 100px 0
+}
+/* subCont */
+#subWrap .subCont {
+	width: 1200px;
+	height:600px;
+	position:relative;
+	padding:50px 0 100px 0;
+}
+#subWrap .subCont .subCont1,.subCont2 {
+	width: 590px;
+	height: 600px;
+	position:absolute;
+	border:1px solid #ddd;
+	box-sizing:border-box;
+	color:#484848;
+	background-color: #eee;
+}
+#subWrap .subCont h3 {
+	padding:20px;
+	text-align:center;
+	color:white;
+	background-color:#2c9ac3;
+}
+#subWrap .subCont ul {padding:20px}
+#subWrap .subCont .subCont2 {right:0}
